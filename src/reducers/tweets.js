@@ -10,6 +10,7 @@ export default function tweets(state = {}, action) {
     switch (action.type) {
         case RECEIVE_TWEETS:
             return {
+                //using ... object spread operator to combine new objects
                 ...state,
                 ...action.tweets
             }
@@ -31,6 +32,7 @@ export default function tweets(state = {}, action) {
                 replyingTo = {
                     [tweet.replyingTo]:{
                         ...state[tweet.replyingTo],
+                        //add tweet id to replies
                         replies:state[tweet.replyingTo].replies.concat([tweet.id])
                     }
                 }
@@ -41,6 +43,7 @@ export default function tweets(state = {}, action) {
                 [action.tweet.id]:action.tweet,
                 ...replyingTo,
             }
+        
         default:
                 return state
     }

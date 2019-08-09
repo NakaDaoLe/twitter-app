@@ -16,10 +16,25 @@ let users = {
     name: "Dan Abramov",
     avatarURL: "https://tylermcginnis.com/would-you-rather/dan.jpg",
     tweets: ['5w6k1n34dkp1x29cuzn2zn', 'czpa59mg577x1oo45cup0d', 'omdbjl68fxact38hk7ypy6', '3km0v4hf1ps92ajf4z2ytg', 'njv20mq7jsxa6bgsqc97', 'sfljgka8pfddbcer8nuxv', 'r0xu2v1qrxa6ygtvf2rkjw'],
+  },
+  kevinkkk: {
+    id: "kevinkkk",
+    name: "K.F.Gamehacker",
+    avatarURL: "https://pbs.twimg.com/profile_images/676003792966455296/MRkYhxo6_reasonably_small.jpg",
+    tweets: [],
   }
 }
 
 let tweets = {
+  "8xf0y6ziyjabvozdd253ns": {
+    id: "8xf0y6ziyjabvozdd253ns",
+    text: "不错的作品。",
+    author: "kevinkkk",
+    timestamp: 1518122597860,
+    likes: ['tylermcginnis'],
+    replies: [''],
+    replyingTo: null,
+  },
   "8xf0y6ziyjabvozdd253nd": {
     id: "8xf0y6ziyjabvozdd253nd",
     text: "Shoutout to all the speakers I know for whom English is not a first language, but can STILL explain a concept well. It's hard enough to give a good talk in your mother tongue!",

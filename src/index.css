@@ -21,6 +21,7 @@ body {
     margin: 35px auto;
     padding: 10px;
     border: 1px solid rgba(0,0,0,.29);
+    border-radius: 5px;
     cursor: pointer;
     background: #fff;
     font-size: 16px;
@@ -75,13 +76,12 @@ body {
   }
   
   .tweet {
-    width: 100%;
     max-width: 590px;
     padding: 10px;
     display: flex;
     margin: 0 auto;
     border: 1px solid #dad7d7;
-    border-radius: 3px;
+    border-radius: 5px;
     cursor: pointer;
   }
   
@@ -152,7 +152,7 @@ body {
     border: 1px solid #dad7d7;
     padding: 10px;
     font-size: 15px;
-    height: 100px;
+    height: 50px;
   }
   
   .tweet-length {
