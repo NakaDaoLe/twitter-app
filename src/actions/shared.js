@@ -4,7 +4,7 @@ import {
 
 import {
     receiveUsers
-} from '../actions/user'
+} from '../actions/users'
 
 import {
     receiveTweets
@@ -14,11 +14,14 @@ import {
     setAuthedUser
 } from '../actions/authedUser'
 
+import {showLoading,hideLoading} from 'react-redux-loading'
+
 const AUTHED_ID = 'tylermcginnis'
 
 //using redux-thunk middle ware to handle Async action
 export function handleInitialData() {
     return (dispatch) => {
+        dispatch(showLoading())
         return getInitialData()
             .then(({
                 users,
@@ -27,6 +30,7 @@ export function handleInitialData() {
                 dispatch(receiveUsers(users))
                 dispatch(receiveTweets(tweets))
                 dispatch(setAuthedUser(AUTHED_ID))
+                dispatch(hideLoading())
             })
     }
 }
